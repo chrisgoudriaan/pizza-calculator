@@ -1,0 +1,30 @@
+<html>
+	<body>
+	<title>
+			pizza calculator
+	</title>
+		<script>
+   		//chris goudriaan pizza calculator
+   		var psmal;														//dit zijn de variable die voor de pizza's zelf staan
+   		var pmid; 					
+   		var plarge;
+   		
+   		const prsmal  = 6												//deze constante geven de prijzen van de pizza's aan
+   		const prmid	= 10
+   		const prlarge = 14
+
+		alert("geef aan hoeveel pizza's je wilt")       				//alert die je een kleine instructie geeft
+		psmal=prompt("hoeveel small pizza's wil je?"); 					//deze prompts geven aan hoeveel pizza een klant wilt
+   		pmid=prompt("hoeveel medium pizza's wil je?");
+   		plarge=prompt("hoeveel large pizza's wil je?");
+   		
+   		tprijs = Number(psmal) * Number(prsmal) + Number(pmid) * Number(prmid) + Number(plarge) * Number(prlarge); //deze formule betekend de totaal prijs
+
+   		document.write( "<h1>" + "je besteld" + " " + psmal + " " +  "kleine pizza's" + " " + "voor €"+ Number(psmal) * Number(prsmal) +",-"+  "<br>"); 
+   		document.write( "<h1>" + "je besteld" + " " + pmid + " " +  "medium pizza's" + " " + "voor €"+ Number(pmid) * Number(prmid) +",-"+ "<br>");
+        document.write( "<h1>" + "je besteld" + " " + plarge + " " +  "large pizza's" + " "  +  "voor €"+ Number(plarge) * Number(prlarge) +",-"+ "<br>");// hier wordt het aantal pizza's een de prijs die je betaalt per soort pizza
+
+        document.write( "<h1>" + "de totaal prijs is: €" +tprijs+",-") //hier wordt de totaal prijs opgeschreven
+		</script>	
+	</body>
+</html>
